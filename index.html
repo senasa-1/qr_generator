@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador QR SENASA (educativo)</title>
+    <link rel="stylesheet" href="./qr_files/styles.css">
+    <script src="./qr_files/qrcode.min.js"></script>
+    <script src="./qr_files/script.js"></script>	
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de QR</h1>
+		<tr>
+			<td id="td"> <p id="p" style="font-size: 1.4em;margin : 4;color: #53c1d8">CUVE N°</p> </td>
+			<td><input type="text" id="txt_cuve" placeholder=""></td>
+		</tr>
+		<tr>
+			<td id="td"> <p id="p" style="font-size: 1.4em;margin : 4;color: #53c1d8">N° de Certificado</p> </td>
+			<td><input type="text" id="txt_certificado" placeholder=""></td>
+		</tr>
+		<tr>
+			<td id="td"> <p id="p" style="font-size: 1.4em;margin : 4;color: #53c1d8">PTR</p> </td>
+			<td><input type="text" id="txt_ptr" placeholder=""></td>
+		</tr>
+		<tr>
+			<td id="td"> <p id="p" style="font-size: 1.4em;margin : 4;color: #53c1d8">Fecha</p> </td>
+			<td><input type="date" id="txt_fecha" placeholder=""></td>
+		</tr>
+
+        <button onclick="generateQRCode()">Generar el codigo QR</button>
+        <div id="qrcode"></div>
+    </div>
+</body>
+</html>
