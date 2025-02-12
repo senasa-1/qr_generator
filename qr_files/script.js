@@ -1,5 +1,5 @@
 function generateQRCode() {
-	const url = 'https://facuarroba.github.io/senasa.test/index.html?';
+	const url = 'https://senasa-1.github.io/valid/index.html?';
 	const c = 'c=' + document.getElementById('txt_cuve').value;
 	const n = '&n=' + document.getElementById('txt_certificado').value;
 	const p = '&p=' + document.getElementById('txt_ptr').value;
